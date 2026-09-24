@@ -1,0 +1,55 @@
+===============================================================================
+GEAR EXPORT ADDON - HISTORIAL DE CAMBIOS (CHANGELOG)
+===============================================================================
+
+Addon: GearExpor===============================================================================
+GEAR EXPORT ADDON - HISTORIAL DE CAMBIOS (CHANGELOG)
+===============================================================================
+
+Addon: GearExport
+Autor: Cobralive (Warmane - WotLK 3.3.5a)
+
+-------------------------------------------------------------------------------
+[v1.1.0] - 09-2026
+-------------------------------------------------------------------------------
+* Novedades y Características:
+  - Escaneo e integración del equipo disponible en las bolsas (ranuras de calidad rara o superior) dentro del reporte exportado.
+  - Actualización de las instrucciones del sistema para la IA, añadiendo reglas de filtrado estricto por enfoque (PvE vs PvP) para el análisis de bolsas.
+
+* Interfaz de Usuario (UI) e Integración:
+  - Añadido indicador visual permanente con el número de versión (`v1.1.0`) en la esquina inferior izquierda de la ventana de exportación.
+  - Optimización en el maquetado y distribución de botones en la ventana de exportación (Aceptar, Créditos).
+  - Nuevo mensaje de confirmación en el chat del juego al generar los datos del personaje.
+
+* Mejoras y Correcciones:
+  - Modificación del cuadro de texto reutilizable (`EditBox`) a tamaño ampliado (99,999 caracteres) para evitar truncado en reportes extensos.
+  - Mejoras de rendimiento y tolerancia a fallos mediante `pcall` en el escaneo de glifos.
+
+-------------------------------------------------------------------------------
+[v1.0.0] - 09-2026
+-------------------------------------------------------------------------------
+* Novedades y Características:
+  - Creación e implementación inicial del addon GearExport para WoW WotLK (3.3.5a).
+  - Escaneo automático de datos del personaje: Nombre, Raza, Clase y Especialización.
+  - Registro de Glifos equipados (Sublimes y Menores).
+  - Extracción completa de Estadísticas Globales: Atributos base, Melee, A distancia, 
+    Hechizos y Defensa/Supervivencia (Golpe, Crítico, Pericia, Celeridad, etc.).
+  - Registro detallado de equipo (ranuras 1-19) incluyendo gemas, encantamientos e 
+    links interactivos de los objetos.
+  - Generación de plantilla de prompt en texto plano optimizada para consultas directas 
+    a Inteligencias Artificiales (ChatGPT, Gemini, Claude, etc.).
+  - Botón flotante en pantalla interactivo y movible (Drag & Drop) para acceso rápido.
+  - Comando de chat `/gearexport` para abrir la ventana y `/gearexport button` 
+    para recentrar el botón flotante en pantalla.
+
+* Interfaz de Usuario (UI) y Localización:
+  - Sistema de localización multilingüe automático (Español / Inglés) basado 
+    en el idioma del cliente del juego (`GetLocale()`).
+  - Ventana interactiva de créditos ("Créditos") con fondo oscuro semitransparente.
+  - Caja de texto auto-seleccionable (`EditBox`) preparada para copiar con Ctrl+A y Ctrl+C.
+
+* Licencia y Documentación:
+  - Inclusión de licencia de software ("All Rights Reserved") en `LICENSE.txt`.
+  - Inclusión de guía de instalación y uso en `README.txt`.
+
+===============================================================================
